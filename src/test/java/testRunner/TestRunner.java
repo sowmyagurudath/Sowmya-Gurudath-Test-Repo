@@ -19,9 +19,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 (strict = true, features = { ".//Features" },glue="stepDefinition",
 			plugin = { "pretty", "html:target/Destination"},
 					monochrome=true,
-					tags="@test"
+					//tags="@test"
 					
-					//tags={"@Smoke,@Regression"}
+					tags={"@Smoke,@Regression"}
 
 			)
 
