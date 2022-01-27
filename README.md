@@ -9,4 +9,5 @@ Framework structure is as below
 4)Run testNG.xml to execute the scripts
 
 Regards,
+
 Sowmya Gurudath
