@@ -1,27 +1,18 @@
 package testRunner;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-
-import org.junit.runner.RunWith;
-
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
-
-
-
-
-
-@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class)
 
 
 @CucumberOptions
-(strict = true, features = { ".//Features" },glue="stepDefinition",
+( features = { ".//Features" },glue="stepDefinition",
 			plugin = { "pretty", "html:target/Destination"},
 					monochrome=true,
-					//tags="@test"
 					
-					tags={"@Smoke,@Regression"}
+					
+					tags="@Regression"
 
 			)
 
@@ -30,6 +21,4 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 public class TestRunner extends AbstractTestNGCucumberTests {
 	 
 }
-
-
 
