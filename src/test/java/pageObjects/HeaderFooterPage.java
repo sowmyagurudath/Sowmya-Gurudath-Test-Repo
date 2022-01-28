@@ -40,25 +40,24 @@ public class HeaderFooterPage {
 
 		
 		String text=header.get(1).getText();
+	Handlers.verifyEquals(text, "Shipping");
+	Handlers.verifyEquals(header.get(2).getText(), "Tracking");
+	Handlers.verifyEquals(header.get(3).getText(), "Support");
+	Handlers.verifyEquals(header.get(4).getText(), "Account");
 	
-		
+Handlers.isElementDisplayed(header.get(5));
 	
-	   Assert.assertEquals(text, "Shipping");
-	   
-	   
-	   Assert.assertEquals(header.get(2).getText(), "Tracking");
-	   Assert.assertEquals(header.get(3).getText(), "Support");
-	   Assert.assertEquals(header.get(4).getText(), "Account");
-	Handlers.isElementDisplayed(header.get(5));
 	  
 	}
 	//verifies footer
 	
 	public void footer()
 	{
-		 Assert.assertEquals(header.get(7).getText(), "Site Map");
-		 Assert.assertEquals(header.get(8).getText(), "Terms of Use");
-		 Assert.assertEquals(header.get(9).getText(), "Privacy Policy");
+		
+		Handlers.verifyEquals(header.get(7).getText(), "Site Map");
+		Handlers.verifyEquals(header.get(8).getText(), "Terms of Use");
+		Handlers.verifyEquals(header.get(9).getText(), "Privacy Policy");
+
 	}
 	
 	
