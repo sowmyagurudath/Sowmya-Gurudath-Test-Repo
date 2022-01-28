@@ -1,23 +1,20 @@
 package stepDefinition;
 
-import java.io.File;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 
-
-
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+
 
 
 
