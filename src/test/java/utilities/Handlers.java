@@ -3,6 +3,7 @@ package utilities;
 
 
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +11,6 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -60,12 +60,12 @@ public class Handlers extends BaseClass{
 	 * @param expectedValue
 	 * @param message
 	 */
-	public void verifyEquals(Object actualValue, Object expectedValue, String message) {
+	public void verifyEquals(Object actualValue, Object expectedValue) {
 		try {
-			Assert.assertEquals(actualValue, expectedValue, message);
+			Assert.assertEquals(actualValue, expectedValue);
 		} catch (AssertionError e) {
 
-			throw new AssertionError(assertionErrorConstant + message + "\n " + e);
+			throw new AssertionError(assertionErrorConstant+ e);
 		}
 	}
 	
