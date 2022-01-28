@@ -73,7 +73,8 @@ public LanguageSelection(WebDriver driver)
 		public void testBrowser() throws InterruptedException {
 		  
 
-	    Handlers.launchApplicationURL(" https://www.fedex.com/en-gb/home.html");
+	   Handlers.launchApplicationURL(" https://www.fedex.com/en-gb/home.html");
+	    
 	   
 	    
 	    }
@@ -123,7 +124,7 @@ public LanguageSelection(WebDriver driver)
 		{
 			String text=trackbtn.getText();
 		
-			Handlers.verifyEquals(text, lan, "Assertion failure");
+			Handlers.verifyEquals(text, lan);
 		}
 		
 		public void verfiyLanguage()
