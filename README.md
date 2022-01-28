@@ -6,7 +6,7 @@ Framework structure is as below
 
 3)Common functions are written in handlers page
 
-4)Run testNG.xml to execute the scripts
+4)Run testng.xml to execute the scripts
 
 Regards,
 
